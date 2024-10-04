@@ -1,0 +1,238 @@
+.w-100{
+  width: 100%;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.g-slider{
+  width: 100%;
+  height: max-content;
+  position: relative;
+}
+.g-slider img{
+  width: 100%;
+  height: 100vh;
+}
+.g-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.g-slider p{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 5vw;
+  background-color: wheat;
+}
+
+
+
+.double-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* padding: 40px 0 0 0; */
+  overflow: hidden;
+}
+.left-flex,
+.right-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.flex-content {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  /* border: 2px solid #ff00ff; */
+  overflow: hidden;
+}
+.fill-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  margin-left: -10%;
+  /* border: 2px solid green; */
+}
+.flex-content div {
+  width: 100%;
+}
+.left-flex {
+  margin-left: -20%;
+}
+.right-flex {
+  margin-left: 20%;
+}
+
+
+.promo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 30px 10px 10px 10px;
+  background-color: #eee;
+  box-shadow: -5px -5px 10px #00000055;
+}
+.left-and-right {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
+}
+.left,
+.right {
+  /* width: 50%; */
+  /* border: solid; */
+}
+
+
+.orange-link{
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  height: 50px;
+  width: 250px;
+  color: white;
+  background-color: #FC5819;
+  border-radius: 2px;
+}
+
+/* 
+<div class="Header__FlexItem LogoContainer">
+      <a href="https://lemonplet.com" class="Header__LogoLink"><h1 class="Header__Logo"><img class="Header__LogoImage Header__LogoImage--primary" src="//lemonplet.com/cdn/shop/files/logo_lemonplet_140x.png?v=1697624808" srcset="//lemonplet.com/cdn/shop/files/logo_lemonplet_140x.png?v=1697624808 1x, //lemonplet.com/cdn/shop/files/logo_lemonplet_140x@2x.png?v=1697624808 2x" width="140" alt="Lemönplet"></h1></a>
+    </div>
+    <div class="header_right-side"> 
+      <div class="Header__FlexItem Header__FlexItem--fill mobile_header_right-side">
+        
+        <a href="/account/login" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk">
+          <span class="hidden-desk"><img width="20px" src="https://cdn.shopify.com/s/files/1/0310/5718/2851/files/account.png?v=1698425966">
+    
+</span>
+        </a> 
+<a href="#swym-wishlist" class="swym-wishlist" data-swym-loaded="true">
+
+              
+
+          <span class="hidden-desk"><img width="33px" src="https://cdn.shopify.com/s/files/1/0310/5718/2851/files/heart_duotone.png">
+    
+</span>
+        </a> 
+        <a href="/cart" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk">
+          <span class="hidden-tablet-and-up"><img width="15px" src="https://cdn.shopify.com/s/files/1/0310/5718/2851/files/bag.png?v=1698425972">
+    
+</span>
+          <span class="hidden-phone"><svg class="Icon Icon--cart-desktop" role="presentation" viewBox="0 0 19 23">
+      <path d="M0 22.985V5.995L2 6v.03l17-.014v16.968H0zm17-15H2v13h15v-13zm-5-2.882c0-2.04-.493-3.203-2.5-3.203-2 0-2.5 1.164-2.5 3.203v.912H5V4.647C5 1.19 7.274 0 9.5 0 11.517 0 14 1.354 14 4.647v1.368h-2v-.912z" fill="currentColor"></path>
+    </svg></span>
+          <span class="Header__CartDot "></span>
+        </a>
+        <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-desk" id="header__Icon" aria-expanded="false" data-action="close-drawer" data-drawer-id="sidebar-menu" aria-label="Open navigation">
+          <span class="hidden-tablet-and-up"><img width="20px" src="https://cdn.shopify.com/s/files/1/0310/5718/2851/files/menu-line.png?v=1698426027">
+    
+</span>
+          <span class="hidden-phone"><svg class="Icon Icon--nav-desktop" role="presentation" viewBox="0 0 24 16">
+      <path d="M0 15.985v-2h24v2H0zm0-9h24v2H0v-2zm0-7h24v2H0v-2z" fill="currentColor"></path>
+    </svg></span>
+        </button><nav class="Header__MainNav hidden-pocket hidden-lap" aria-label="Main navigation">
+            <ul class="HorizontalList HorizontalList--spacingExtraLoose menuItemsContainer"><li class="nav_item ">
+                  <a href="/collections/woman-all" class="u-h5">WOMEN</a><div class="DropdownMenu" style="width: 168.2px;">
+                      <ul class="Linklist"><li class="Linklist__Item">
+                            <a href="/collections/woman-all" class="Link Link--secondary">ALL </a></li><li class="Linklist__Item">
+                            <a href="/collections/new-1" class="Link Link--secondary">NEW </a></li><li class="Linklist__Item">
+                            <a href="/collections/top" class="Link Link--secondary">TOPS / CARDIGANS </a></li><li class="Linklist__Item">
+                            <a href="/collections/dresses" class="Link Link--secondary">DRESSES / JUMPSUITS </a></li><li class="Linklist__Item">
+                            <a href="/collections/pants-shorts" class="Link Link--secondary">SKIRTS / PANTS </a></li><li class="Linklist__Item">
+                            <a href="/collections/vests" class="Link Link--secondary">VESTS </a></li><li class="Linklist__Item">
+                            <a href="/collections/jackets" class="Link Link--secondary">JACKETS </a></li><li class="Linklist__Item">
+                            <a href="/collections/coats" class="Link Link--secondary">COATS / PONCHOS </a></li><li class="Linklist__Item">
+                            <a href="/collections/accessories" class="Link Link--secondary">ACCESSORIES </a></li><li class="Linklist__Item">
+                            <a href="/collections/bag" class="Link Link--secondary">BAGS </a></li></ul>
+                    </div></li><li class="nav_item ">
+                  <a href="/collections/sale" class="u-h5">SEASON OFF</a><div class="DropdownMenu" style="width: 168.2px;">
+                      <ul class="Linklist"><li class="Linklist__Item">
+                            <a href="/collections/season-off-all" class="Link Link--secondary">SEASON OFF ALL </a></li><li class="Linklist__Item">
+                            <a href="/collections/flashsale" class="Link Link--secondary">FLASH SALE </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-tops-cardigans" class="Link Link--secondary">TOPS / CARDIGANS </a></li><li class="Linklist__Item">
+                            <a href="/collections/sale" class="Link Link--secondary">DRESSES / JUMPSUITS </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-skirts-pants" class="Link Link--secondary">SKIRTS / PANTS </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-vests" class="Link Link--secondary">VESTS </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-jackets" class="Link Link--secondary">JACKETS </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-coats-ponchos" class="Link Link--secondary">COATS / PONCHOS </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-accessories" class="Link Link--secondary">ACCESSORIES </a></li><li class="Linklist__Item">
+                            <a href="/collections/season-off-bags" class="Link Link--secondary">BAGS </a></li><li class="Linklist__Item">
+                            <a href="/collections/refurb-sale" class="Link Link--secondary">REFURB SALE </a></li></ul>
+                    </div></li><li class="nav_item ">
+                  <a href="/collections/kids-all" class="u-h5">KIDS</a><div class="DropdownMenu" style="width: 168.2px;">
+                      <ul class="Linklist"><li class="Linklist__Item">
+                            <a href="/collections/kids-all" class="Link Link--secondary">ALL </a></li><li class="Linklist__Item">
+                            <a href="/collections/kids-tops" class="Link Link--secondary">TOPS </a></li><li class="Linklist__Item">
+                            <a href="/collections/kids-bottoms" class="Link Link--secondary">BOTTOMS </a></li><li class="Linklist__Item">
+                            <a href="/collections/kids-dresses" class="Link Link--secondary">DRESSES </a></li><li class="Linklist__Item">
+                            <a href="/collections/kids-outers" class="Link Link--secondary">OUTERS </a></li><li class="Linklist__Item">
+                            <a href="/collections/similar-look" class="Link Link--secondary">MOMMY &amp; ME </a></li><li class="Linklist__Item">
+                            <a href="/collections/kids-sale" class="Link Link--secondary">KIDS REFURB SALE </a></li><li class="Linklist__Item">
+                            <a href="/collections/kid-sale" class="Link Link--secondary">SALE </a></li></ul>
+                    </div></li><li class="nav_item ">
+                  <a href="/pages/stories" class="u-h5">RELEASE</a><div class="DropdownMenu" style="width: 168.2px;">
+                      <ul class="Linklist"><li class="Linklist__Item">
+                            <a href="/blogs/designer-note" class="Link Link--secondary">DESIGNER NOTE </a></li><li class="Linklist__Item">
+                            <a href="/blogs/stories" class="Link Link--secondary">STORY </a></li><li class="Linklist__Item">
+                            <a href="/blogs/newsletter" class="Link Link--secondary">NEWSLETTER </a></li></ul>
+                    </div></li><li class="nav_item ">
+                  <a href="/pages/about" class="u-h5">ABOUT</a><div class="DropdownMenu" style="width: 168.2px;">
+                      <ul class="Linklist"><li class="Linklist__Item">
+                            <a href="/pages/about" class="Link Link--secondary">ABOUT LEMÖNPLET </a></li><li class="Linklist__Item">
+                            <a href="/pages/store" class="Link Link--secondary">STORE </a></li></ul>
+                    </div></li></ul>
+          </nav></div>
+  
+      <div class="Header__FlexItem Header__FlexItem--fill"><nav class="Header__SecondaryNav">
+            <ul class="HorizontalList HorizontalList--spacingLoose hidden-pocket hidden-lap right-desktop-items"><li class="HorizontalList__Item">
+                <a href="#swym-wishlist" class="Heading u-h6" data-swym-loaded="true">
+                  WISHLIST 
+                </a>  
+              </li> 
+                <li class="HorizontalList__Item">
+                  <a href="/account/login" class="Heading Link Link--primary Text--subdued u-h6">ACCOUNT</a>
+                </li><li class="HorizontalList__Item">
+                <a href="/cart" class="Heading u-h6">
+                 
+CART(<span class="article">0</span>)
+                </a> 
+              </li> 
+              <li class="HorizontalList__Item"> 
+                <button type="button" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable fix-menuButton ">
+                  <span class="hidden-tablet-and-up"><img width="20px" src="https://cdn.shopify.com/s/files/1/0310/5718/2851/files/menu-line.png?v=1698426027">
+    
+</span>
+                  <span class="hidden-phone"><svg class="Icon Icon--nav-desktop" role="presentation" viewBox="0 0 24 16">
+      <path d="M0 15.985v-2h24v2H0zm0-9h24v2H0v-2zm0-7h24v2H0v-2z" fill="currentColor"></path>
+    </svg></span>
+                </button>
+              </li>
+              
+            </ul>
+          </nav></div>
+    </div>
+   */
